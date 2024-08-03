@@ -1,0 +1,383 @@
+1
+00:00:00,240 --> 00:00:07,380
+Hello, I'm super excited to start this course with you, but as always, before we do, we need to
+
+2
+00:00:07,380 --> 00:00:13,260
+see where we're starting and where we're ending up so we have a clear path to succeeding.
+
+3
+00:00:13,410 --> 00:00:15,870
+So let's see what this course will look like for you.
+
+4
+00:00:16,740 --> 00:00:20,010
+Were first going to start off with creating our hacking lab.
+
+5
+00:00:20,430 --> 00:00:25,830
+Now, don't worry whether you're on Windows, Mac or Linux, you're going to be able to follow because
+
+6
+00:00:25,830 --> 00:00:33,090
+what we'll do is use something called a virtual machine to install CALEIGH Linux, which is often used
+
+7
+00:00:33,090 --> 00:00:39,700
+with ethical hacking onto our machine so that we can simulate and create our hacking environment.
+
+8
+00:00:39,750 --> 00:00:44,760
+Don't worry, all the tools we're going to use is free and you're going to be able to set up your computer
+
+9
+00:00:44,910 --> 00:00:47,310
+in a way to follow the rest of the course.
+
+10
+00:00:47,310 --> 00:00:49,300
+And you're also going to have a professional setup.
+
+11
+00:00:49,590 --> 00:00:54,750
+We're also going to cover some basics on hacking, some fundamentals and principles that's going to
+
+12
+00:00:54,750 --> 00:00:57,390
+set us up for success later on in the course.
+
+13
+00:00:58,290 --> 00:01:05,430
+Then we have an optional part for those that really want to get into programming as well and possibly
+
+14
+00:01:05,430 --> 00:01:11,430
+programming some of our projects later on in the course, we're going to teach you Python from scratch
+
+15
+00:01:11,700 --> 00:01:19,290
+or if you know Python already as a refresher so that you can also learn an extra pair of skill set for
+
+16
+00:01:19,290 --> 00:01:21,450
+some harder projects that we have in the course.
+
+17
+00:01:21,870 --> 00:01:27,690
+Then we get into the fun part and the first step we're going to dive into after we have our hacking
+
+18
+00:01:27,690 --> 00:01:29,760
+lab and some of our programming skills.
+
+19
+00:01:29,850 --> 00:01:31,890
+Sharp is reconnaissance.
+
+20
+00:01:32,580 --> 00:01:38,280
+Here is where we learn what we call footprinting, or in other words, information gathering once we
+
+21
+00:01:38,280 --> 00:01:39,250
+choose our target.
+
+22
+00:01:39,270 --> 00:01:43,910
+Our first task is to gain as much information about the target as possible.
+
+23
+00:01:44,130 --> 00:01:50,310
+We're going to talk about IP addresses, about the Who is Tooele, the Web Stiltskin, finding usernames,
+
+24
+00:01:50,310 --> 00:01:57,110
+building an email scraper tool and other tools available to us to gather as much information as possible.
+
+25
+00:01:57,420 --> 00:02:01,140
+From there we go into Skåne and this is where things get real.
+
+26
+00:02:01,230 --> 00:02:06,720
+In this section, we gather information on some of the technical information that we can acquire from
+
+27
+00:02:06,720 --> 00:02:07,170
+a target.
+
+28
+00:02:07,380 --> 00:02:12,180
+For example, if they have open ports, if they have a firewall, what software they're running on these
+
+29
+00:02:12,180 --> 00:02:15,390
+ports and if they have any outdated operating systems.
+
+30
+00:02:15,390 --> 00:02:20,370
+And don't worry, if you don't know what any of this means, we take you from scratch and you're going
+
+31
+00:02:20,370 --> 00:02:21,020
+to learn it all.
+
+32
+00:02:21,030 --> 00:02:28,320
+Here is where we learn about TCP UDP using the powerful and map tool, different types of scans that
+
+33
+00:02:28,320 --> 00:02:32,580
+we can do, how to work with firewalls, using decoys and packet fragmentation.
+
+34
+00:02:32,640 --> 00:02:36,930
+And we're also going to build a port scanner project in the section.
+
+35
+00:02:37,590 --> 00:02:40,830
+From there we go into vulnerability analysis.
+
+36
+00:02:40,920 --> 00:02:46,410
+In this section we use the information that we gathered from the previous sections and with this information
+
+37
+00:02:46,410 --> 00:02:52,350
+that we tried to determine whether there is a known vulnerability that we can take advantage of.
+
+38
+00:02:52,500 --> 00:02:58,200
+We're going to use different sorts of tools to learn about our target system and where their weaknesses
+
+39
+00:02:58,200 --> 00:02:58,440
+are.
+
+40
+00:02:58,560 --> 00:03:04,020
+We're actually going to work on a Windows seven machine that has a vulnerability and show how we can
+
+41
+00:03:04,020 --> 00:03:08,010
+break into it and how we can use that to our advantage then.
+
+42
+00:03:08,460 --> 00:03:10,320
+Well, this is the exciting part.
+
+43
+00:03:10,320 --> 00:03:12,360
+This is the big part of the course.
+
+44
+00:03:12,960 --> 00:03:16,530
+This is where we attack and gain access to the target machines.
+
+45
+00:03:16,530 --> 00:03:21,360
+And throughout this session, we'll be covering many different vulnerabilities and different targets.
+
+46
+00:03:21,510 --> 00:03:27,840
+We perform different sorts of attacks on virtual machines and cover a very important tool of an ethical
+
+47
+00:03:27,840 --> 00:03:28,230
+hacker.
+
+48
+00:03:28,440 --> 00:03:30,480
+That is that Métis point framework.
+
+49
+00:03:30,720 --> 00:03:33,650
+The goal of exploitation is to get on a target machine.
+
+50
+00:03:34,080 --> 00:03:39,690
+So this means we must drop a payload on that target machine so we can use it to navigate through their
+
+51
+00:03:39,690 --> 00:03:45,270
+systems, look through their files, execute anything we want, even delete anything we want without
+
+52
+00:03:45,270 --> 00:03:45,840
+the target.
+
+53
+00:03:45,840 --> 00:03:47,280
+Knowing anything about it.
+
+54
+00:03:48,000 --> 00:03:53,310
+We'll learn to create our own viruses and Trojans that we can deliver to the target, whether through
+
+55
+00:03:53,310 --> 00:03:55,140
+an email or through a USB.
+
+56
+00:03:55,410 --> 00:04:00,570
+This is a big section and we're going to dive into the weeds, try out these techniques and learn how
+
+57
+00:04:00,570 --> 00:04:01,650
+to defend against them.
+
+58
+00:04:02,070 --> 00:04:05,130
+After that, we have what we call the post exploitation.
+
+59
+00:04:05,280 --> 00:04:09,630
+This, as the name suggests, is what we do after we exploit a target.
+
+60
+00:04:09,810 --> 00:04:14,940
+Since we're on that machine, we can do many things depending on what we want to get out from it at
+
+61
+00:04:14,940 --> 00:04:20,430
+the end after we do all the things we wanted by exploiting the target, we want to make sure we cover
+
+62
+00:04:20,430 --> 00:04:26,760
+our tracks by deleting any event logs or deleting any evidence that we were ever on that machine.
+
+63
+00:04:26,850 --> 00:04:31,950
+We're going to learn lots of things here, such as creating persistence on a target machine and even
+
+64
+00:04:31,950 --> 00:04:34,800
+creating a backdoor in one of our projects.
+
+65
+00:04:35,400 --> 00:04:41,460
+We then get into a very important part that a lot of you might find very, very interesting, and that
+
+66
+00:04:41,460 --> 00:04:43,260
+is website penetration testing.
+
+67
+00:04:43,800 --> 00:04:46,020
+This is a big topic for an ethical hacker.
+
+68
+00:04:46,020 --> 00:04:50,970
+And in this section, we're mainly targeting websites and their bugs and vulnerabilities.
+
+69
+00:04:51,330 --> 00:04:58,110
+These vulnerabilities can be anything from misconfiguration, askew, all injections, information disclosures,
+
+70
+00:04:58,320 --> 00:04:59,520
+command ejections.
+
+71
+00:05:00,000 --> 00:05:05,490
+Site scripting attacks, and we're also going to quote our own and create our own project to a login
+
+72
+00:05:05,490 --> 00:05:08,900
+brute force script and also a directory discovery tool.
+
+73
+00:05:08,910 --> 00:05:13,890
+Again, in this section, you're going to learn how to use these techniques and therefore defend against
+
+74
+00:05:13,890 --> 00:05:17,080
+them on your own website or a client's Web site.
+
+75
+00:05:17,610 --> 00:05:22,040
+Then we get into something that you have to know as an ethical hacker.
+
+76
+00:05:22,230 --> 00:05:23,810
+It's the man in the middle attack.
+
+77
+00:05:24,330 --> 00:05:26,760
+This is an attack that is used inside a network.
+
+78
+00:05:26,940 --> 00:05:33,630
+And this allows us to sniff any unencrypted data and see it in plain text so we could use this technique
+
+79
+00:05:33,630 --> 00:05:35,970
+to see passwords for some websites.
+
+80
+00:05:36,270 --> 00:05:41,660
+And we're going to cover some of the main tools that hackers use when doing a man in the middle attack.
+
+81
+00:05:42,060 --> 00:05:46,060
+We then have a bonus section on wi fi and wireless cracking.
+
+82
+00:05:46,380 --> 00:05:52,220
+This is the section where we want to gain access to a network by cracking its wireless password.
+
+83
+00:05:52,380 --> 00:05:58,200
+And we're going to talk about things like air crack, password cracking and cat password cracking and
+
+84
+00:05:58,200 --> 00:06:02,950
+show you how you might use this and how attackers might use this on your wireless network.
+
+85
+00:06:03,360 --> 00:06:08,940
+Now, we got lots to cover, but I also want to talk about the best bar right here, our online private
+
+86
+00:06:08,940 --> 00:06:11,740
+community of over 300000 students.
+
+87
+00:06:11,880 --> 00:06:16,950
+We have people chatting here every day helping each other out to finish the course, doing challenges
+
+88
+00:06:16,950 --> 00:06:20,500
+together and talking about the latest and greatest in technology.
+
+89
+00:06:20,850 --> 00:06:25,980
+This is an optional resource for you to use so you can have back and forth conversation with other students
+
+90
+00:06:25,980 --> 00:06:26,720
+and myself.
+
+91
+00:06:26,730 --> 00:06:29,330
+So you feel like you're part of a real classroom.
+
+92
+00:06:29,340 --> 00:06:30,380
+But you know what?
+
+93
+00:06:30,660 --> 00:06:31,610
+Enough talk.
+
+94
+00:06:31,620 --> 00:06:32,850
+I know you're getting excited.
+
+95
+00:06:32,850 --> 00:06:33,680
+I am, too.
+
+96
+00:06:33,720 --> 00:06:37,170
+So let's get started and let's learn ethical hacking.

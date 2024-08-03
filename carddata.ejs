@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.place-card {
+    width: 300px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.place-card img {
+    width: 100%;
+    height: auto;
+}
+
+.place-details {
+    padding: 20px;
+}
+
+.place-details h2 {
+    margin-top: 0;
+}
+
+.place-details p {
+    margin: 5px 0;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.read-more {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.more-text {
+    display: none;
+}
+
+</style>
+<body>
+    <div class="place-card">
+        <img src="<%=data.image%>" alt="Vrindvan">
+        <div class="place-details">
+            <h2><%=data.place%></h2>
+            <p>City: <%=data.city%></p>
+            <p>Price: <%=data.price%></p>
+            <div class="description">
+                <p><%=data.description%></p>
+                <span class="read-more cursor-pointer text-blue-700">Read More</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".description p").each(function(){
+                var content = $(this).html();
+                var showChar = 100;
+                if(content.length > showChar) {
+                    var c = content.substr(0, showChar);
+                    var h = content.substr(showChar, content.length - showChar);
+                    var html = c + '<span class="more-text">' + h + '</span>';
+                    $(this).html(html);
+                }
+            });
+
+            $(".read-more").click(function(){
+                var $this = $(this);
+                var $content = $this.prev();
+                var linkText = $this.text();
+                if(linkText === "Read More"){
+                    $content.find('span').removeClass('more-text');
+                    $this.text("Show Less");
+                } else {
+                    $content.find('span').addClass('more-text');
+                    $this.text("Read More");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

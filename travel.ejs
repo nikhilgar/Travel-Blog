@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Listing</title>
+</head>
+<body>
+    <h1>Create Listing</h1>
+    <form action="/travelform" method="POST">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" min="1000" required><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="image">Image URL:</label>
+        <input type="text" id="image" name="image" required><br><br>
+
+        <label for="Place">Place:</label>
+        <input type="text" id="image" name="place" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
